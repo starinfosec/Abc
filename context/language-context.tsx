@@ -49,10 +49,12 @@ const translations = {
   checkAvailability: "उपलब्धता तपासा",
   frequentlyAsked: "नेहमी विचारले जाणारे प्रश्न",
   everythingYouNeed: "तुम्हाला लागणारी सर्व माहिती इथे",
-  createAudioBusiness: "फक्त ₹299 मध्ये ऑडिओ तयार करा",
+  createAudioBusiness: "₹1499 मध्ये 3 दिवसांचे Meta-Ads सेटअप, Meta-Ads बजेटसह",
   get2DayPlan: "2 दिवसांची प्लॅन – फक्त ₹999",
   shareViaWhatsapp: "WhatsApp वर शेअर करा",
   startNow: "आत्ताच सुरू करा",
+  metaAdsSetup: "3 दिवसांचे Meta Ads सेटअप, ज्यात संपूर्ण ऍड बजेट व्यवस्थापन समाविष्ट आहे.",
+
 
   // Audio page
   audioSamples: "ऑडिओ नमुने",
@@ -142,10 +144,11 @@ const translations = {
   checkAvailability: "उपलब्धता देखें",
   frequentlyAsked: "अक्सर पूछे जाने वाले सवाल",
   everythingYouNeed: "यहां सारी जानकारी मिलेगी",
-  createAudioBusiness: "सिर्फ ₹299 में ऑडियो बनाएं",
+  createAudioBusiness: "3 दिनों का मेटा-ऐड्स सेटअप सिर्फ ₹1499 में, जिसमें मेटा-ऐड्स बजट भी शामिल है",
   get2DayPlan: "2 दिन का प्लान – सिर्फ ₹999",
   shareViaWhatsapp: "WhatsApp पर शेयर करें",
   startNow: "अभी शुरू करें",
+  metaAdsSetup: "3 दिनों का Meta Ads सेटअप, जिसमें पूरा ऐड बजट मैनेजमेंट भी शामिल है।",
 
   // Audio page
   audioSamples: "ऑडियो सैंपल",
@@ -235,11 +238,12 @@ const translations = {
     checkAvailability: "Check Availability",
     frequentlyAsked: "Frequently Asked Questions",
     everythingYouNeed: "Everything you need to know about the expedition",
-    createAudioBusiness: "Create Your Business Audio Starting at Rs 299",
+    createAudioBusiness: "3 days meta-ads setup in Rs 1499 including meta-ads budget",
     get2DayPlan: "Get 2 Day Plan Only Rs 999 Including Ad Budget",
     shareViaWhatsapp: "Share via WhatsApp",
     startNow: "Start Now",
-
+    metaAdsSetup: "3-day Meta Ads setup, including complete ad budget management.",
+    
     // Audio page
     audioSamples: "Audio Samples",
     maleAudio: "Male Audio",
