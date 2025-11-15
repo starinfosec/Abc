@@ -66,63 +66,77 @@ export default function ContactPage() {
   </h1>
   <p className="text-xl text-white/80 mb-12">{t("sendAnInquiry")}</p>
 
-  {/* FINAL MERGED FORMSPREE FORM */}
-  <form
-    action="https://formspree.io/f/movyjrbn"
-    method="POST"
-    className="space-y-6"
+ {/* FINAL MERGED FORMSPREE FORM */}
+<form
+  action="https://formspree.io/f/movyjrbn"
+  method="POST"
+  className="space-y-6"
+>
+  {/* Name Field */}
+  <div className="animate-fade-in" style={{ animationDelay: "100ms" }}>
+    <label className="block text-white/80 mb-2 font-semibold">
+      {t("name")}
+    </label>
+    <input
+      type="text"
+      name="name"
+      required
+      className="w-full px-6 py-3 rounded-lg bg-yellow-400/5 ring-1 ring-yellow-400/30 text-white placeholder-white/40 focus:outline-none focus:ring-yellow-400/60 transition-all"
+      placeholder={currentPlaceholders.name}
+    />
+  </div>
+
+  {/* Email Field */}
+  <div className="animate-fade-in" style={{ animationDelay: "200ms" }}>
+    <label className="block text-white/80 mb-2 font-semibold">
+      {t("email")}
+    </label>
+    <input
+      type="email"
+      name="email"
+      required
+      className="w-full px-6 py-3 rounded-lg bg-yellow-400/5 ring-1 ring-yellow-400/30 text-white placeholder-white/40 focus:outline-none focus:ring-yellow-400/60 transition-all"
+      placeholder={currentPlaceholders.email}
+    />
+  </div>
+
+  {/* 📱 Phone Number Field (NEW FIELD) */}
+  <div className="animate-fade-in" style={{ animationDelay: "250ms" }}>
+    <label className="block text-white/80 mb-2 font-semibold">
+      {t("phone")}
+    </label>
+    <input
+      type="tel"
+      name="phone"
+      required
+      className="w-full px-6 py-3 rounded-lg bg-yellow-400/5 ring-1 ring-yellow-400/30 text-white placeholder-white/40 focus:outline-none focus:ring-yellow-400/60 transition-all"
+      placeholder={currentPlaceholders.phone}
+    />
+  </div>
+
+  {/* Message Field */}
+  <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
+    <label className="block text-white/80 mb-2 font-semibold">
+      {t("message")}
+    </label>
+    <textarea
+      name="message"
+      required
+      rows={6}
+      className="w-full px-6 py-3 rounded-lg bg-yellow-400/5 ring-1 ring-yellow-400/30 text-white placeholder-white/40 focus:outline-none focus:ring-yellow-400/60 transition-all resize-none"
+      placeholder={currentPlaceholders.message}
+    ></textarea>
+  </div>
+
+  {/* Submit Button */}
+  <button
+    type="submit"
+    className="w-full bg-yellow-400 text-black hover:bg-yellow-500 rounded-full px-8 py-4 font-semibold transition-colors animate-fade-in"
+    style={{ animationDelay: "400ms" }}
   >
-    {/* Name Field */}
-    <div className="animate-fade-in" style={{ animationDelay: "100ms" }}>
-      <label className="block text-white/80 mb-2 font-semibold">
-        {t("name")}
-      </label>
-      <input
-        type="text"
-        name="name"
-        required
-        className="w-full px-6 py-3 rounded-lg bg-yellow-400/5 ring-1 ring-yellow-400/30 text-white placeholder-white/40 focus:outline-none focus:ring-yellow-400/60 transition-all"
-        placeholder={currentPlaceholders.name}
-      />
-    </div>
-
-    {/* Email Field */}
-    <div className="animate-fade-in" style={{ animationDelay: "200ms" }}>
-      <label className="block text-white/80 mb-2 font-semibold">
-        {t("email")}
-      </label>
-      <input
-        type="email"
-        name="email"
-        required
-        className="w-full px-6 py-3 rounded-lg bg-yellow-400/5 ring-1 ring-yellow-400/30 text-white placeholder-white/40 focus:outline-none focus:ring-yellow-400/60 transition-all"
-        placeholder={currentPlaceholders.email}
-      />
-    </div>
-
-    {/* Message Field */}
-    <div className="animate-fade-in" style={{ animationDelay: "300ms" }}>
-      <label className="block text-white/80 mb-2 font-semibold">
-        {t("message")}
-      </label>
-      <textarea
-        name="message"
-        required
-        rows={6}
-        className="w-full px-6 py-3 rounded-lg bg-yellow-400/5 ring-1 ring-yellow-400/30 text-white placeholder-white/40 focus:outline-none focus:ring-yellow-400/60 transition-all resize-none"
-        placeholder={currentPlaceholders.message}
-      ></textarea>
-    </div>
-
-    {/* Submit Button */}
-    <button
-      type="submit"
-      className="w-full bg-yellow-400 text-black hover:bg-yellow-500 rounded-full px-8 py-4 font-semibold transition-colors animate-fade-in"
-      style={{ animationDelay: "400ms" }}
-    >
-      {t("sendMessage")}
-    </button>
-  </form>
+    {t("sendMessage")}
+  </button>
+</form>
 </div>
 
           {/* Contact Info */}
@@ -172,4 +186,3 @@ export default function ContactPage() {
     </div>
   )
 }
-
