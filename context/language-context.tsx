@@ -51,7 +51,7 @@ const translations = {
   everythingYouNeed: "तुम्हाला लागणारी सर्व माहिती इथे",
   createAudioBusiness: "₹1499 मध्ये 3 दिवसांचे Meta-Ads सेटअप, Meta-Ads बजेटसह",
   get2DayPlan: "2 दिवसांची प्लॅन – फक्त ₹999",
-  shareViaWhatsapp: "WhatsApp वर शेअर करा",
+  shareViaWhatsapp: "आता बुक करा",
   startNow: "आत्ताच सुरू करा",
   metaAdsSetup: "3 दिवसांचे Meta Ads सेटअप, ज्यात संपूर्ण ऍड बजेट व्यवस्थापन समाविष्ट आहे.",
 
@@ -146,7 +146,7 @@ const translations = {
   everythingYouNeed: "यहां सारी जानकारी मिलेगी",
   createAudioBusiness: "3 दिनों का मेटा-ऐड्स सेटअप सिर्फ ₹1499 में, जिसमें मेटा-ऐड्स बजट भी शामिल है",
   get2DayPlan: "2 दिन का प्लान – सिर्फ ₹999",
-  shareViaWhatsapp: "WhatsApp पर शेयर करें",
+  shareViaWhatsapp: "अभी बुक करें",
   startNow: "अभी शुरू करें",
   metaAdsSetup: "3 दिनों का Meta Ads सेटअप, जिसमें पूरा ऐड बजट मैनेजमेंट भी शामिल है।",
 
@@ -240,7 +240,7 @@ const translations = {
     everythingYouNeed: "Everything you need to know about the expedition",
     createAudioBusiness: "3 days meta-ads setup in Rs 1499 including meta-ads budget",
     get2DayPlan: "Get 2 Day Plan Only Rs 999 Including Ad Budget",
-    shareViaWhatsapp: "Share via WhatsApp",
+    shareViaWhatsapp: "Book Now",
     startNow: "Start Now",
     metaAdsSetup: "3-day Meta Ads setup, including complete ad budget management.",
     
