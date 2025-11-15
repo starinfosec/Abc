@@ -135,52 +135,76 @@ export default function HomePage() {
       </section>
 
 
-      {/* Audio Business Section */}
-      <section className="relative z-10 py-16 sm:py-24 px-4 sm:px-6 bg-black">
-        <div className="max-w-7xl mx-auto">
-          <div className="rounded-3xl bg-yellow-400/5 ring-1 ring-yellow-400/20 backdrop-blur p-6 sm:p-8 lg:p-12">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-center">
-              <div className="order-2 lg:order-1">
-                <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-4 sm:mb-6 text-balance text-yellow-400">
-                  {t("createAudioBusiness")}
-                </h2>
-                <p className="text-base sm:text-lg text-white/80 leading-relaxed text-pretty mb-6 sm:mb-8">
-                  {t("get2DayPlan")}
-                </p>
-                <button
-                  onClick={handleWhatsAppClick}
-                  className="bg-yellow-400 text-black hover:bg-yellow-500 rounded-full px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-lg font-semibold transition-colors flex items-center gap-2 w-full sm:w-auto justify-center sm:justify-start"
-                >
-                  <MessageCircle className="w-5 h-5" />
-                  {t("shareViaWhatsapp")}
-                </button>
-              </div>
+ {/* Audio Business Section */}
+<section className="relative z-10 py-16 sm:py-24 px-4 sm:px-6 bg-black">
+  <div className="max-w-7xl mx-auto">
+    <div className="rounded-3xl bg-yellow-400/5 ring-1 ring-yellow-400/20 backdrop-blur p-6 sm:p-8 lg:p-12">
 
-              <div className="rounded-2xl bg-yellow-400/10 ring-1 ring-yellow-400/30 p-6 sm:p-8 lg:p-12 text-center overflow-hidden order-1 lg:order-2">
-                <div className="relative h-48 sm:h-64 lg:h-80 mb-4 sm:mb-6 rounded-xl overflow-hidden">
-                  <Image
-                    src="/audio-production-microphone.jpg"
-                    alt="Audio Production Setup"
-                    fill
-                    className="object-cover"
-                  />
-                </div>
-                <div className="mb-6">
-                  <p className="text-sm sm:text-base text-white/60 mb-2">Starting Price</p>
-                  <div className="text-5xl sm:text-6xl font-bold text-yellow-400 mb-2">Rs 299</div>
-                  <p className="text-sm sm:text-base text-white/60">2-Day Plan: Rs 999</p>
-                </div>
-                <button
-                  onClick={handleWhatsAppClick}
-                  className="w-full bg-yellow-400 text-black hover:bg-yellow-500 rounded-full px-6 sm:px-8 py-3 font-semibold transition-colors text-sm sm:text-base"
-                >
-                  {t("startNow")}
-                </button>
-              </div>
-            </div>
+      {/* Two separate cards inside */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+        {/* Left Card */}
+        <div className="rounded-2xl bg-yellow-400/10 ring-1 ring-yellow-400/30 p-6 sm:p-8 lg:p-10 flex flex-col justify-between">
+          
+          {/* Image */}
+          <div className="relative h-48 sm:h-56 lg:h-60 mb-6 rounded-xl overflow-hidden">
+            <Image
+              src="/meta.png"  // <-- replace with your image path
+              alt="Meta Ads Setup"
+              fill
+              className="object-cover"
+            />
           </div>
+
+          <div>
+            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight mb-4 text-yellow-400">
+              {t("createAudioBusiness")}
+            </h2>
+
+            {/* Auto-translated meta ads text */}
+            <p className="text-base sm:text-lg text-white/80 leading-relaxed mb-6">
+              {t("metaAdsSetup")}
+            </p>
+          </div>
+
+          <button
+            onClick={handleWhatsAppClick}
+            className="bg-yellow-400 text-black hover:bg-yellow-500 rounded-full px-8 py-4 text-lg font-semibold transition-colors w-full"
+          >
+            {t("shareViaWhatsapp")}
+          </button>
         </div>
-      </section>
+
+        {/* Right Card */}
+        <div className="rounded-2xl bg-yellow-400/10 ring-1 ring-yellow-400/30 p-6 sm:p-8 lg:p-10 text-center">
+          <div className="relative h-48 sm:h-64 lg:h-72 mb-6 rounded-xl overflow-hidden">
+            <Image
+              src="/audio-production-microphone.jpg"
+              alt="Audio Production Setup"
+              fill
+              className="object-cover"
+            />
+          </div>
+
+          <p className="text-sm sm:text-base text-white/60 mb-2">Create Your Business Audio Starting at</p>
+          <h3 className="text-5xl sm:text-6xl font-bold text-yellow-400 mb-2">Rs 299</h3>
+          <p className="text-sm sm:text-base text-white/60 mb-6"></p>
+
+          <button
+            onClick={handleWhatsAppClick}
+            className="w-full bg-yellow-400 text-black hover:bg-yellow-500 rounded-full px-8 py-4 font-semibold transition-colors text-lg"
+          >
+            {t("startNow")}
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
     <Footer />
     </div>
   )
